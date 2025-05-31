@@ -1,7 +1,6 @@
 const Database = require('better-sqlite3');
 const db = new Database('./db.sqlite');
 
-// Create Accounts Table
 db.prepare(`
   CREATE TABLE IF NOT EXISTS accounts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -13,7 +12,6 @@ db.prepare(`
   )
 `).run();
 
-// Create Destinations Table
 db.prepare(`
   CREATE TABLE IF NOT EXISTS destinations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
