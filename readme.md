@@ -1,14 +1,18 @@
-installed necessary things
+Data Pusher:
+# 1. Initialize npm project
 npm init -y
+
+# 2. Install required packages
 npm install express better-sqlite3 axios body-parser
 
+# 3. Open VSCode and install HttpBook extension:
+#    Search for extension ID: anweber.httpbook
 
-install the Extension ID : anweber.httpbook this extenstion on vscode while testing.
-
-
-
-
-Steps to Run:
+# 4. Navigate to your project folder (if not already there)
 cd data-pusher
+
+# 5. Install dependencies again (if needed)
 npm install
+
+# 6. Start the server
 node app.js
