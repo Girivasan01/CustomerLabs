@@ -1,0 +1,57 @@
+### Create Account
+POST http://localhost:3000/accounts
+Content-Type: application/json
+
+{
+  "email": "test@example2.com",
+  "name": "Test Account2",
+  "website": "https://example2.com"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+content-type: application/json; charset=utf-8
+content-length: 219
+etag: W/"db-WQYc20tLrLrHYvr8UnShP3xgwb0"
+date: Sat, 31 May 2025 15:59:35 GMT
+connection: close
+###
+POST http://localhost:3000/destinations
+Content-Type: application/json
+
+{
+  "account_id": "540403ba-b2dd-44d6-b562-ff03a26cfc9c",
+  "url": "https://customerlabs/assessmenturl",
+  "method": "POST",
+  "headers": {
+    "APP_ID": "1234APPID1234",
+    "APP_SECRET": "secret",
+    "ACTION": "user.update",
+    "Content-Type": "application/json",
+    "Accept": "*"
+  }
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+content-type: application/json; charset=utf-8
+content-length: 31
+etag: W/"1f-qBxZ8wiQfEmEMuWOgOm0vW4YE8E"
+date: Sat, 31 May 2025 16:00:00 GMT
+connection: close
+###
+POST http://localhost:3000/server/incoming_data
+Content-Type: application/json
+CL-X-TOKEN: 9d9ea75ea0119185bb3cad4846135ac6559e345484419d3383c4dc13b0db5137
+{
+  "user_id": 123,
+  "action": "update"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+content-type: application/json; charset=utf-8
+content-length: 40
+etag: W/"28-NmG5adXfwj/eyQ3MhsRhGfcaTt4"
+date: Sat, 31 May 2025 16:00:33 GMT
+connection: close
