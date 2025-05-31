@@ -1,6 +1,3 @@
-Here’s a short, simple, and clean version of your `README.md`, suitable for GitHub:
-
-````markdown
 # Data Pusher
 
 A minimal Node.js app using Express and SQLite to manage accounts, destinations, and data pushing.
@@ -10,7 +7,7 @@ A minimal Node.js app using Express and SQLite to manage accounts, destinations,
 1. Clone the repo and navigate to the folder:
    ```bash
    cd data-pusher
-````
+
 
 2. Install dependencies:
 
