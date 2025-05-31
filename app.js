@@ -7,12 +7,11 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-// Helper
+
 function generateSecretToken() {
   return crypto.randomBytes(32).toString('hex');
 }
 
-// ========== ACCOUNTS CRUD ========== //
 app.post('/accounts', (req, res) => {
   const { email, name, website } = req.body;
   if (!email || !name) return res.status(400).json({ error: 'email & name required' });
